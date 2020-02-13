@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,7 +48,7 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
@@ -64,3 +63,150 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	margin: 8%;
+}
+
+header {
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.links {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.links a {
+	color: grey;
+	text-decoration: none;
+	justify-content: space-between;
+	padding: 15px;
+	margin: 2px;
+
+}
+
+.logo {
+	margin-left: 1px;
+}
+
+#getStarted {
+	display:flex;
+	justify-content:space-around;
+	align-items: center;
+	max-width: 100%;
+	flex-wrap: wrap;
+}
+
+.gsClass {
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+
+}
+
+.gsClass h1 {
+	font-size: 300%;
+	text-align: center;
+}
+
+.gsClass button {
+	background-color: white;
+	border: 1px solid black;
+	width: 120px;
+}
+
+.sectionOne {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sectionTwo {
+	display: flex;
+	justify-content: center;
+}
+
+.sectionTwo img {
+	width: 100%;
+}
+
+.sectionThree {
+	display: flex;
+	justify-content: space-between;
+}
+
+#copyright {
+	text-align: center;
+}
+
+.line {
+	border-top: 1px solid;
+}
+
+/* css for services.html */
+
+.boxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.servicesSection {
+	display: flex;
+	justify-content: space-around;
+	flex: 0 48%;
+	padding: 0 0 2% 0;
+}
+
+.servicesSection h1 {
+	font-size: 28px;
+	margin-top: 4%;
+}
+
+.aboutBox {
+	border: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	width: 100%;
+	padding: 4% 4% 2% 4%;
+	background-color: #EFEFEF;
+}
+
+.aboutBox button {
+	width: 35%;
+	border-radius: 4px;
+	background-color: white;
+	border: 1px solid black;
+	padding: 1.5%;
+}
+
+.factsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.facts {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex: 0 50%;
+
+}
+
+.facts ul {
+	list-style-type: square;
+	margin-left: 3.5%;
+}
+
+.factsContainer img {
+	max-width: 40%;
+
+}
